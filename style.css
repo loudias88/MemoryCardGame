@@ -10,7 +10,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #ff6363;
+  background-image: url(/Images/db_bad.png);
 }
 .wrapper{
   padding: 25px;
@@ -24,8 +24,8 @@ body{
   justify-content: center;
 }
 .cards{
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 800px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -64,17 +64,17 @@ body{
   height: 100%;
   position: absolute;
   border-radius: 7px;
-  background: #fff;
+  background: rgb(244, 240, 240);
   pointer-events: none;
   backface-visibility: hidden;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   transition: transform 0.25s linear;
 }
 .card .front-view img{
-  width: 19px;
+  width: 58px;
 }
 .card .back-view img{
-  max-width: 45px;
+  max-width: 80px;
 }
 .card .back-view{
   transform: rotateY(-180deg);
