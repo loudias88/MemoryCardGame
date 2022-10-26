@@ -11,6 +11,7 @@ body{
   justify-content: center;
   min-height: 100vh;
   background-image: url(/Images/db_bad.png);
+  
 }
 .wrapper{
   padding: 25px;
