@@ -10,7 +10,9 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url(/Images/db_bad.png);
+  background-image: url(/Images/bg.png);
+  background-size: cover;
+ 
   
 }
 .wrapper{
@@ -68,14 +70,14 @@ body{
   background: rgb(244, 240, 240);
   pointer-events: none;
   backface-visibility: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   transition: transform 0.25s linear;
 }
 .card .front-view img{
   width: 58px;
 }
 .card .back-view img{
-  max-width: 80px;
+  max-width: 140px;
 }
 .card .back-view{
   transform: rotateY(-180deg);
