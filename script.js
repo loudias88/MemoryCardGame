@@ -2,6 +2,7 @@ const cards = document.querySelectorAll(".card");
 let matched = 0;
 let cardOne, cardTwo;
 let disableDeck = false;
+
 function flipCard({target: clickedCard}) {
     if(cardOne !== clickedCard && !disableDeck) {
         clickedCard.classList.add("flip");
@@ -15,6 +16,7 @@ function flipCard({target: clickedCard}) {
         matchCards(cardOneImg, cardTwoImg);
     }
 }
+
 function matchCards(img1, img2) {
     if(img1 === img2) {
         matched++;
@@ -39,6 +41,7 @@ function matchCards(img1, img2) {
         disableDeck = false;
     }, 1200);
 }
+
 function shuffleCard() {
     matched = 0;
     disableDeck = false;
@@ -52,6 +55,7 @@ function shuffleCard() {
         card.addEventListener("click", flipCard);
     });
 }
+
 shuffleCard();
     
 cards.forEach(card => {
